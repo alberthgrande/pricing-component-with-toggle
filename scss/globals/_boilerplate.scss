@@ -82,6 +82,10 @@ body {
   }
 }
 
+.card:nth-child(odd) {
+  box-shadow: hsl(236, 64%, 85%) 0px 2px 8px 0px;
+}
+
 .card:nth-child(odd) hr {
   border: 1px solid var(--neutral-very-light-grayish-blue);
 }
