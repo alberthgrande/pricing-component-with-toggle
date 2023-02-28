@@ -24,7 +24,7 @@
   background: var(--primary-linear-gradient);
   border-radius: 50px;
   -webkit-transition: 0.4s;
-  transition: 4s;
+  transition: 0.4s;
 }
 .slider::before {
   position: absolute;
@@ -36,7 +36,7 @@
   background-color: var(--neutral-very-light-grayish-blue);
   border-radius: 50%;
   -webkit-transition: 0.4s;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
