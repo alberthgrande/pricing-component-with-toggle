@@ -82,6 +82,14 @@ body {
   }
 }
 
+.card:nth-child(odd) hr {
+  border: 1px solid var(--neutral-very-light-grayish-blue);
+}
+
+.card:nth-child(2) hr {
+  border: 1px solid hsl(236, 72%, 79%);
+}
+
 // pricing
 .annually,
 .monthly {
