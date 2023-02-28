@@ -70,7 +70,7 @@ body {
       background: var(--primary-linear-gradient);
       color: var(--neutral-very-light-grayish-blue);
       font-weight: var(--fw-600);
-      transition: 2s all ease-in-out;
+      transition: 0.4s all ease-in-out;
     }
 
     &-more:hover:nth-child(odd) {
