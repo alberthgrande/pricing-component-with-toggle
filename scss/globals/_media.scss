@@ -1,0 +1,107 @@
+@media only screen and (min-width: 48rem) {
+  // header
+  .pricing {
+    margin: -3rem 0 5rem;
+  }
+
+  .container {
+    margin: 10% auto 0;
+  }
+
+  .card:nth-child(odd) {
+    color: var(--neutral-dark-grayish-blue);
+    height: 450px;
+  }
+  .card:nth-child(1) {
+    position: absolute;
+    left: 0;
+  }
+  .card:nth-child(2) {
+    margin-top: -1.5rem;
+    z-index: 1;
+    height: 500px;
+
+    background: var(--primary-linear-gradient);
+    color: var(--neutral-very-light-grayish-blue);
+  }
+  .card:nth-child(3) {
+    position: absolute;
+    right: 0;
+  }
+
+  .card:nth-child(1) hr {
+    margin-right: 2rem;
+  }
+  .card:nth-child(3) hr {
+    margin-left: 2rem;
+  }
+
+  // link
+  .card:nth-child(1) .card__link-more {
+    margin-right: 2rem;
+  }
+  .card:nth-child(2) .card__link-more {
+    background: var(--neutral-very-light-grayish-blue);
+    color: hsl(237, 63%, 64%);
+  }
+  .card:nth-child(3) .card__link-more {
+    margin-left: 2rem;
+  }
+
+  .card:nth-child(2) .card__link-more:hover {
+    background: var(--primary-linear-gradient);
+    color: var(--neutral-very-light-grayish-blue);
+
+    border: solid 2px var(--neutral-very-light-grayish-blue);
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  body {
+    background: {
+      color: var(--neutral-very-light-grayish-blue);
+      image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
+      repeat: no-repeat;
+      position: bottom -900px left 0, top 0 right 0;
+    }
+  }
+
+  // header
+  .pricing {
+    margin: 3rem 0 3rem;
+  }
+
+  .container {
+    margin: 2rem 1rem;
+  }
+  .card-container {
+    // layout
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .card:nth-child(odd) {
+    color: var(--neutral-dark-grayish-blue);
+  }
+  .card:nth-child(2) {
+    background: var(--primary-linear-gradient);
+    color: var(--neutral-very-light-grayish-blue);
+  }
+
+  // link
+  .card:nth-child(2) .card__link-more {
+    background: var(--neutral-very-light-grayish-blue);
+    color: hsl(237, 63%, 64%);
+  }
+
+  .card:nth-child(2) .card__link-more:hover {
+    background: var(--primary-linear-gradient);
+    color: var(--neutral-very-light-grayish-blue);
+
+    border: solid 2px var(--neutral-very-light-grayish-blue);
+  }
+}

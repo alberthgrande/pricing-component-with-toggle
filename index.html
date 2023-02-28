@@ -28,21 +28,26 @@
   <body>
     <main>
       <div class="container">
-        <div>
-          <h1>Our Pricing</h1>
+        <div class="pricing">
+          <h1 class="pricing__header">Our Pricing</h1>
 
-          <span>Annually</span>
-
-          <span>Monthly</span>
+          <div class="pricing__custom">
+            <span>Annually</span>
+            <label class="switch">
+              <input type="checkbox" id="pricing" />
+              <span class="slider"></span>
+            </label>
+            <span>Monthly</span>
+          </div>
         </div>
 
         <section class="card-container">
           <article class="card">
             <h2>Basic</h2>
 
-            <h2>&dollar;19.99</h2>
+            <h2 class="annually">&dollar;19.99</h2>
 
-            <h2>&dollar;199.99</h2>
+            <h2 class="monthly">&dollar;199.99</h2>
             <hr />
 
             <p class="card__text">500 GB Storage</p>
@@ -59,9 +64,9 @@
           <article class="card">
             <h2>Professional</h2>
 
-            <h2>&dollar;24.99</h2>
+            <h2 class="annually">&dollar;24.99</h2>
 
-            <h3>&dollar;249.99</h3>
+            <h3 class="monthly">&dollar;249.99</h3>
             <hr />
 
             <p class="card__text">1 TB Storage</p>
@@ -78,9 +83,9 @@
           <article class="card">
             <h2>Master</h2>
 
-            <h3>&dollar;39.99</h3>
+            <h3 class="annually">&dollar;39.99</h3>
 
-            <h3>&dollar;399.99</h3>
+            <h3 class="monthly">&dollar;399.99</h3>
             <hr />
 
             <p class="card__text">2 TB Storage</p>
@@ -105,5 +110,8 @@
         >. Coded by <a href="#">Alberth Grande</a>.
       </div>
     </footer>
+
+    <!-- script -->
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -10,6 +10,21 @@ body {
   font-size: var(--fs-text);
 }
 
+.pricing {
+  color: var(--neutral-dark-grayish-blue);
+
+  &__header {
+    margin: 0.5rem 0;
+  }
+  &__custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--neutral-light-grayish-blue);
+  }
+}
+
 .container {
   text-align: center;
   max-width: 1050px;
@@ -55,92 +70,38 @@ body {
       background: var(--primary-linear-gradient);
       color: var(--neutral-very-light-grayish-blue);
       font-weight: var(--fw-600);
+      transition: 2s all ease-in-out;
+    }
+
+    &-more:hover:nth-child(odd) {
+      background: var(--neutral-very-light-grayish-blue);
+      color: hsl(237, 63%, 64%);
+
+      border: solid 2px hsl(237, 63%, 64%);
     }
   }
 }
 
-@media only screen and (min-width: 48rem) {
-  .container {
-    margin: 10% auto 0;
-  }
-
-  .card:nth-child(odd) {
-    color: var(--neutral-dark-grayish-blue);
-    height: 450px;
-  }
-  .card:nth-child(1) {
-    position: absolute;
-    left: 0;
-  }
-  .card:nth-child(2) {
-    margin-top: -1.5rem;
-    z-index: 1;
-    height: 500px;
-
-    background: var(--primary-linear-gradient);
-    color: var(--neutral-very-light-grayish-blue);
-  }
-  .card:nth-child(3) {
-    position: absolute;
-    right: 0;
-  }
-
-  .card:nth-child(1) hr {
-    margin-right: 2rem;
-  }
-  .card:nth-child(3) hr {
-    margin-left: 2rem;
-  }
-
-  // link
-  .card:nth-child(1) .card__link-more {
-    margin-right: 2rem;
-  }
-  .card:nth-child(2) .card__link-more {
-    background: var(--neutral-very-light-grayish-blue);
-    color: hsl(237, 63%, 64%);
-  }
-  .card:nth-child(3) .card__link-more {
-    margin-left: 2rem;
-  }
+// pricing
+.annually,
+.monthly {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.annually {
+  display: none;
 }
 
-@media only screen and (max-width: 48rem) {
-  body {
-    background: {
-      color: var(--neutral-very-light-grayish-blue);
-      image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
-      repeat: no-repeat;
-      position: bottom -800px left 0, top 0 right 0;
-    }
-  }
+.annually.active {
+  display: block;
+}
 
-  .container {
-    margin: 2rem 1rem;
-  }
-  .card-container {
-    // layout
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+.monthly {
+  display: block;
+}
 
-  .card {
-    width: 100%;
-  }
-  .card:nth-child(odd) {
-    color: var(--neutral-dark-grayish-blue);
-  }
-  .card:nth-child(2) {
-    background: var(--primary-linear-gradient);
-    color: var(--neutral-very-light-grayish-blue);
-  }
-
-  // link
-  .card:nth-child(2) .card__link-more {
-    background: var(--neutral-very-light-grayish-blue);
-    color: hsl(237, 63%, 64%);
-  }
+.monthly.active {
+  display: none;
 }
 
 // footer
